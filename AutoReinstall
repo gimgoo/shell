@@ -89,7 +89,8 @@ function NetMode() {
   CopyRight
 
   if [ "$isAuto" == '0' ]; then
-    read -r -p " if your vps is google cloud please input n and then modify the netmask to 255.255.255.0 \n Using DHCP to configure network automatically? [Y/n]:" input
+    read -r -p " if your vps is google cloud please input n and then modify the netmask to 255.255.255.0 \
+    Using DHCP to configure network automatically? [Y/n]:" input
     case $input in
       [yY][eE][sS]|[yY]) NETSTR='' ;;
       [nN][oO]|[nN]) isAuto='1' ;;
